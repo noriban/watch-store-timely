@@ -1,0 +1,163 @@
+/*color pallete 
+https://colorhunt.co/palette/3b1e549b7ebdd4bee4eeeeee/
+
+
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.w-60{
+    width: 60%;
+}
+.w-80{
+    width: 80%;
+}
+.w-100{
+    width: 100%;
+}
+.main{
+    background-color: #EEEEEE;
+}
+.nav{
+   
+}
+.navbar-link{
+    padding: 0 15px 12px;
+  text-decoration: none; 
+  color: rgba(59, 30, 84,0.5);
+  font-size: 1.3rem;
+
+}
+.navbar-link:hover{
+    color: rgba(59, 30, 84,9);
+}
+i{
+   
+    font-size: 1.5rem;
+    padding:10px;
+}
+.navbar-list{
+    padding: 15px;
+    /* justify-content: space-around; */
+
+}
+.navbar-store{
+    justify-content: end;
+    align-items: center;
+}
+.navbar-search{
+align-items: center;
+}
+.navbar-links a{
+    /* border-bottom: 1px solid black ;
+     */
+    
+
+}
+.navbar-links a:hover{
+    border-bottom: 2px solid rgba(0,0,0,0.5) ;
+}
+
+.border-left{
+    border-left: 1px solid  rgba(  59, 30, 84,0.8);
+}
+.border-right{
+    border-right: 1px solid  rgba(  59, 30, 84,0.8);
+}
+.border-bottom{
+    border-bottom: 1px solid  rgba(  59, 30, 84,0.8);
+}
+.border-top{
+    border-top: 1px solid  rgba(  59, 30, 84,0.8);
+}
+
+/* .fa:hover{
+    color: rgba(59, 30, 84,9);
+    cursor: pointer;
+} */
+.navbar-item{
+    display: inline-block;
+}
+.navbar-logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.col-sm-3{
+    width: 33.3%;
+
+   
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+.f-direction-col{
+    flex-direction: column;
+}
+.f-direction-row{
+    flex-direction: row;
+}
+
+.active{
+    color: rgba(59, 30, 84,9);
+}
+
+.active:hover{
+    
+    cursor:default;
+
+}
+.small-font {
+  font-size:0.7rem;
+}
