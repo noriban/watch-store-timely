@@ -6,7 +6,9 @@ https://colorhunt.co/palette/3b1e549b7ebdd4bee4eeeeee/
    v2.0 | 20110126
    License: none (public domain)
 */
-
+*{
+    font-family: Verdana, Tahoma, sans-serif;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
    
 }
 ol, ul {
@@ -65,27 +67,28 @@ table {
     background-color: #EEEEEE;
 }
 .nav{
-   
+ 
 }
 .navbar-link{
     padding: 0 15px 12px;
-  text-decoration: none; 
+    cursor: pointer;
+  text-decoration: none;
+  text-align: center; 
   color: rgba(59, 30, 84,0.5);
   font-size: 1.3rem;
-
+    border: none;
+    background-color: #EEEEEE;
 }
 .navbar-link:hover{
     color: rgba(59, 30, 84,9);
 }
 i{
-   
     font-size: 1.5rem;
     padding:10px;
 }
 .navbar-list{
     padding: 15px;
     /* justify-content: space-around; */
-
 }
 .navbar-store{
     justify-content: end;
@@ -97,13 +100,10 @@ align-items: center;
 .navbar-links a{
     /* border-bottom: 1px solid black ;
      */
-    
-
 }
 .navbar-links a:hover{
     border-bottom: 2px solid rgba(0,0,0,0.5) ;
 }
-
 .border-left{
     border-left: 1px solid  rgba(  59, 30, 84,0.8);
 }
@@ -116,7 +116,6 @@ align-items: center;
 .border-top{
     border-top: 1px solid  rgba(  59, 30, 84,0.8);
 }
-
 /* .fa:hover{
     color: rgba(59, 30, 84,9);
     cursor: pointer;
@@ -125,16 +124,17 @@ align-items: center;
     display: inline-block;
 }
 .navbar-logo img{
-    width: 150px;
+    /* width: 150px; */
     height: 150px;
 }
-
 .col-sm-3{
     width: 33.3%;
-
-   
 }
-
+.mask{
+    background-color: rgba(0,0,0,0.5); 
+    width: 100%;
+    height: 100%;
+}
 .d-flex{
     display: flex;
 }
@@ -148,16 +148,202 @@ align-items: center;
 .f-direction-row{
     flex-direction: row;
 }
-
 .active{
     color: rgba(59, 30, 84,9);
+    border-bottom: 2px solid rgba(0,0,0,0.5) ;
 }
-
+.navbar-button{
+    align-items: center;
+    display: none;
+}
 .active:hover{
-    
     cursor:default;
-
 }
 .small-font {
   font-size:0.7rem;
+}
+.navbar-logo-top{
+    display: none; 
+}
+.navbar-logo-top img{
+    height: 150px;
+}
+.navbar-search-store{
+    display: none;
+}
+.login-text{
+    padding: 0px 15px;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    text-align: center;
+    color: rgba(  59, 30, 84, 0.5);
+}
+.login-active{
+    cursor: default;
+    color: rgba(  59, 30, 84,1);
+}
+.login-text-body{
+    width: 100%;
+    padding: 20px 0px;
+}
+.button{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: #EEEEEE;
+}
+.button:hover h1{
+    color: rgba(  59, 30, 84,1);
+}
+#register_btn{
+  
+}
+#login_btn{
+  
+}
+.login-page {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+}
+.hidden {
+    display: none;
+}
+.dialog-body{
+    /* justify-content: space-evenly; */
+    align-items: center;
+    position: relative;
+    background-color:#EEEEEE ;
+    box-shadow: 0 2px 14px 0 rgba(220,136,136,.2);
+    width: 20%;
+    height: 50%;
+    border-radius: 20px;
+}
+.dialog-body-close{
+    justify-content: end;
+
+    width: 100%;
+}
+#login_btn_close{
+ 
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    color: rgba(  59, 30, 84,0.5);   
+}  
+#login_btn_close:hover{
+    color: rgba(  59, 30, 84,1);
+  
+}
+.form{
+    height: 80%;
+    width: 75%; 
+    justify-content: space-evenly;
+}
+.form-input{
+    width: 100%;
+    height: 28px;
+    border: none;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(  59, 30, 84,0.5);
+    color: rgba(  59, 30, 84,0.5);
+    background-color: #EEEEEE;
+}
+.form-submit {
+    background-color: rgba(  59, 30, 84,0.5);
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+    color: rgba(  59, 30, 84,1);
+}
+.form-submit:hover{
+    background-color: rgba(  59, 30, 84, 0.8);
+}
+.show{
+    display: flex;
+}
+@media only screen and (max-width: 1400px) {
+ .login-text{
+    font-size: 1.2rem;
+    padding: 0 10px;
+ }
+ .dialog-body{
+    width: 30%;
+}
+}
+@media only screen and (max-width: 900px) {
+    .dialog-body{
+        width: 40%;
+    }
+    /* .login-text{
+        font-size: 0.7rem;
+   
+    } */
+    .navbar{
+        justify-content: space-around;
+ 
+    }
+    .navbar-search{
+        display: none;
+    }
+    .navbar-button{
+        display: flex;
+    }
+    .navbar-logo-top{
+        display: flex;
+    }
+    .navbar-logo{
+        display: none;
+    }
+    .navbar-search-store{
+        display: flex;
+    }
+    .navbar-list{
+        flex-direction: column;
+      
+    }
+    .navbar-links {
+        text-align: center;
+       align-items: center;
+    }
+    .navbar-item{
+        padding: 10px;
+    }
+    .show{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+    }
+    .login-text{
+        font-size: 0.7rem;
+    }
+    .dialog-body{
+        width: 60%;
+    }
+}
+
+.image-article {
+    /* padding: 15px; */
+    /* border-radius: 25px; */
+    width: 100%;
+    height: 350px;
+}
+.article{
+    padding: 15px 0;
+}
+.btn-left{
+
+}
+.btn-right{
+justify-content: right;
 }
