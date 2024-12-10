@@ -54,6 +54,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 .w-60{
     width: 60%;
 }
@@ -67,7 +68,7 @@ table {
     background-color: #EEEEEE;
 }
 .nav{
- 
+ background-color: #EEEEEE;
 }
 .navbar-link{
     padding: 0 15px 12px;
@@ -142,6 +143,12 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
+.h-100{
+    height: 100%;
+}
+.justify-content-space-btwn{
+    justify-content: space-between;
+}
 .f-direction-col{
     flex-direction: column;
 }
@@ -198,8 +205,9 @@ align-items: center;
 #register_btn{
   
 }
-#login_btn{
-  
+#loginbutton{
+
+  text-align: center;
 }
 .login-page {
     position: fixed;
@@ -225,11 +233,11 @@ align-items: center;
 }
 .dialog-body-close{
     justify-content: end;
-    width: 90%;
-    
+
+    width: 96%;
 }
 #login_btn_close{
-    background-color: rgba(  59, 30, 84, 0.0);
+ background-color: rgba(  59, 30, 84, 0);
     cursor: pointer;
     /* border-radius: 25px; */
     border: none;
@@ -269,7 +277,79 @@ align-items: center;
 .show{
     display: flex;
 }
+
+.image-article {
+    /* padding: 15px;  */
+    border-radius: 25px;
+   width: 100%;
+  
+}
+.article{
+   padding: 15px 0;
+}
+.btn-left{
+
+}
+.btn-right{
+justify-content: right;
+}
+
+
+.active-selected-image{
+   background-color: rgba(  59, 30, 84,1);
+}
+
+.fa-period{
+   border: 2px solid rgba(  59, 30, 84,0.5);
+   border-radius: 25px;
+   padding: 4px;
+   
+}
+.wrap{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.shop-dialog-center{
+
+}
+.product-price{
+    width: 80%;
+   text-align: left;
+   font-size: 1.2rem;
+   font-weight: 500;
+   color: rgba(  59, 30, 84,1);
+   font-family: "saira condensed";
+}
+.product-name{
+   font-size: 1.1rem;
+   padding: 15px 0;
+   text-align: center;
+   color: rgba(  59, 30, 84,1);
+}
+.shop-dialog{
+   width: 20%;
+   padding: 20px 0px;
+   cursor: pointer;
+   border:1px solid rgba(  59, 30, 84, 0);
+
+}
+.image-shop{
+    width: 80%;
+
+   border-radius: 25px;
+}
+.product-dialog{
+
+}
 @media only screen and (max-width: 1400px) {
+    .shop-dialog{
+        width: 20%;
+    }
+    .image-shop{
+        width: 80%;
+    }
+
  .login-text{
     font-size: 1.2rem;
     padding: 0 10px;
@@ -279,6 +359,12 @@ align-items: center;
 }
 }
 @media only screen and (max-width: 900px) {
+    .shop-dialog{
+        width: 30%;
+    }
+    .product-price{
+        width: 90%;
+    }
     .dialog-body{
         width: 40%;
     }
@@ -321,6 +407,14 @@ align-items: center;
     }
 }
 @media only screen and (max-width: 600px) {
+    .shop-dialog{
+        width: 45%;
+    }
+    .image-shop{
+        height: 100px;
+        width: 100px;
+    }
+
     .navbar{
         width: 100%;
     }
@@ -331,33 +425,75 @@ align-items: center;
         width: 60%;
     }
 }
-
-.image-article {
-    padding: 15px 0px 0px 0px; 
-     border-radius: 30px;
-    width: 100%;
-    height: 300px;
+.product-button{
+    height: 80%;
+    border: none;
+    background-color: rgba( 233,233,233,0);
+    cursor: pointer;
 }
-.article{
-    padding: 15px 0;
-}
-.btn-left{
-
-}
-.btn-right{
-justify-content: right;
+.shop-dialog:hover{
+    background-color: rgba(230, 230, 230,1 );
+    border:1px solid rgba( 233,233,233,1);
+    border-radius: 50px;
+ 
 }
 
-.fa-period {
-border: 2px solid rgba(  59, 30, 84,0.5);
-border-radius: 50px;
-padding: 2px;
-}
-.selected-image-active {
-    background-color: rgba(  59, 30, 84, 1);
+.error{
+    color: red;
+    text-align: center;
 }
 
-.wrap {
-    flex-wrap: wrap;
+.product-site{
+padding: 15px;
+
 }
 
+.dialog-product-price{
+    
+        width: 100%;
+       text-align: left;
+       font-size: 2rem;
+       font-weight: 500;
+       color: rgba(  59, 30, 84,1);
+       font-family: "saira condensed";
+    
+}
+
+.dialog-product-button{
+    background-color: rgba(233,233,233,1);
+    border-radius: 50px;
+    padding-top: 15px;
+}
+.product-image {
+    width: 50%;
+}
+.product-image img{
+    padding: 15px;
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+}
+.dialog-spec{
+    padding: 15px;
+}
+.product-specification{
+    padding: 15px;
+}
+.product-description{
+    padding: 15px;
+    text-align: center;
+}
+
+.product-text{
+    font-size: 1.2rem;
+    color: rgba(  59, 30, 84,1);
+
+}
+
+
+.product-text-topic{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(  59, 30, 84,1);
+
+}
