@@ -1,65 +1,45 @@
-let linkBar = document.getElementById("bars")
-let navbarLinks = document.getElementById("navbar-list")
-let loginPage = document.getElementById("login-page")
-let loginOpenButton = document.getElementById("loginbutton")
-let loginCloseButton = document.getElementById("login_btn_close")
-let resgisterButton = document.getElementById("register_btn")
-let confirmPassInput = document.getElementById("confirm_pass")
-let registerText = document.getElementById("register-text")
-let loginText = document.getElementById("login-text")
-let loginbutton = document.getElementById("login_btn")
-let form = document.getElementById("form")
-linkBar.addEventListener('click' , changestyle)
-loginOpenButton.addEventListener('click' , changeloginpage)
-loginCloseButton.addEventListener("click" , changeloginpage)
-resgisterButton.addEventListener("click" , changeregister)
-loginbutton.addEventListener("click" , changelogin)
 
 
-let input
-function changestyle(){
- if(navbarLinks.classList[2] == "show"){
-    navbarLinks.classList.remove("show")
- }else{
-    navbarLinks.classList.add("show")
+let rightarrow = document.getElementById("image-change-right")
+let leftarrow = document.getElementById("image-change-left")
+let selectimage = document.getElementsByClassName("fa-period")
+let images = document.getElementById("images").children
+
+
+
+rightarrow.addEventListener('click', nextimg)
+leftarrow.addEventListener('click', previusimg)
+
+
+
+let previuscount = 0
+let counter = 0
+function nextimg(){
+   previuscount = counter
+   counter++
+
+      // images[2].classList.add("hidden")
+      // selectimage[2].classList.remove("active-selected-image")
+ if(counter == 3){
+   counter = 0
  }
+     
 
-   
+
+    images[counter].classList.remove("hidden")
+    selectimage[counter].classList.add("active-selected-image")
+
+images[previuscount].classList.add("hidden")
+selectimage[previuscount].classList.remove("active-selected-image")
+    
+}
+
+function previusimg(){
 
 }
 
-function changeloginpage(){
 
-   if(loginPage.classList[2] == "hidden"){
-      loginPage.classList.remove("hidden")
-   }else{
-      loginPage.classList.add("hidden")
-   }
-}
 
-function changeregister(){
-   if(loginText.classList[2] == "login-active"){
-   loginText.classList.remove("login-active")
-   registerText.classList.add("login-active")
-   input = document.createElement("input")
-   input.classList.add("form-input")
-   input.classList.add("small-font")
-   input.setAttribute('type', 'password')
-   input.setAttribute("name","confirm-password")
-   input.setAttribute("id","confirm_pass")
-   input.setAttribute("required" ,"")
-   input.setAttribute("placeholder","Confirm Password")
-   
-  form.appendChild(input)
-}
-}
-function changelogin(){
-   
-   
-      input.remove()
-      loginText.classList.add("login-active")
-      registerText.classList.remove("login-active")
-   
-}
+
 
 
