@@ -82,7 +82,7 @@ table {
 .navbar-link:hover{
     color: rgba(59, 30, 84,9);
 }
-i{
+.fa{
     font-size: 1.5rem;
     padding:10px;
 }
@@ -190,7 +190,7 @@ align-items: center;
     cursor: pointer;
     padding: 0;
     border: none;
-    background-color: #EEEEEE;
+    /* background-color: #EEEEEE; */
 }
 .button:hover h1{
     color: rgba(  59, 30, 84,1);
@@ -225,13 +225,13 @@ align-items: center;
 }
 .dialog-body-close{
     justify-content: end;
-
-    width: 100%;
+    width: 90%;
+    
 }
 #login_btn_close{
- 
+    background-color: rgba(  59, 30, 84, 0.0);
     cursor: pointer;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     border: none;
     color: rgba(  59, 30, 84,0.5);   
 }  
@@ -333,10 +333,10 @@ align-items: center;
 }
 
 .image-article {
-    /* padding: 15px; */
-    /* border-radius: 25px; */
+    padding: 15px 0px 0px 0px; 
+     border-radius: 30px;
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 .article{
     padding: 15px 0;
@@ -347,3 +347,17 @@ align-items: center;
 .btn-right{
 justify-content: right;
 }
+
+.fa-period {
+border: 2px solid rgba(  59, 30, 84,0.5);
+border-radius: 50px;
+padding: 2px;
+}
+.selected-image-active {
+    background-color: rgba(  59, 30, 84, 1);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+

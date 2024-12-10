@@ -9,13 +9,21 @@ let registerText = document.getElementById("register-text")
 let loginText = document.getElementById("login-text")
 let loginbutton = document.getElementById("login_btn")
 let form = document.getElementById("form")
+let periods = document.getElementsByClassName("fa-period")
+let rightarrow = document.getElementById("image-change-right")
+let leftarrow = document.getElementById("image-change-left")
+
+rightarrow.addEventListener("click" , nextimg)
+
 linkBar.addEventListener('click' , changestyle)
 loginOpenButton.addEventListener('click' , changeloginpage)
 loginCloseButton.addEventListener("click" , changeloginpage)
 resgisterButton.addEventListener("click" , changeregister)
 loginbutton.addEventListener("click" , changelogin)
 
-
+function nextimg (){
+   
+}
 let input
 function changestyle(){
  if(navbarLinks.classList[2] == "show"){
