@@ -29,9 +29,9 @@
         <i class="fa fa-search "></i>
         </a>    
         </div>
-            <a class="navbar-link " href="#">
+            <button class="navbar-link " id="bag_shopping">
             <i class="fa fa-bag-shopping "></i>
-            </a>
+            </button>
     
             <?php 
 // 
@@ -69,7 +69,7 @@ function logout(){
                 <a class="navbar-link"  href="#">Sale</a> 
             </li>
             <li class="navbar-item">
-                <a class="navbar-link"  href="#">Contact</a> 
+                <a class="navbar-link"  href="contact.php">Contact</a> 
             </li>
         </ul>
    </div>

@@ -1,9 +1,11 @@
 <?php require('session.php');?>
 
-    <?php require  'nav.php';
+    <?php
+      require_once 'head.php';
+     require  'nav.php';
         require 'login.php';
         require 'config.php';
-        require_once'head.php';
+      
     ?>
     <div class="article d-flex f-direction-col w-100 justify-content-center">
         <div class="image-body f-direction-col d-flex w-80 ">
@@ -78,5 +80,6 @@
     <?php 
     require 'footer.php';
     ?>
+       
     <script src="java.js"></script>
     <script src="login.js"></script>
