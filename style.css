@@ -54,6 +54,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button, input, textarea{
+    outline: none;
+}
 
 .w-60{
     width: 60%;
@@ -459,7 +462,7 @@ padding: 15px;
     
 }
 
-.dialog-product-button{
+.submit-button{
     background-color: rgba(233,233,233,1);
     border-radius: 50px;
     padding-top: 15px;
@@ -495,5 +498,48 @@ padding: 15px;
     font-size: 1.2rem;
     font-weight: bold;
     color: rgba(  59, 30, 84,1);
+
+}
+.no_signed{
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+}
+.contact-text{
+    font-size: 1.5rem;
+    color: rgba(  59, 30, 84, 0.5);
+    padding: 15px;
+}
+.contact-input{
+    resize: none;
+    border: none;
+    border-left: 1px solid rgba(  59, 30, 84, 0.5);
+    font-size: 1.2rem;
+    background-color: #EEEEEE;
+    padding: 15px;
+    color: gray;
+}
+.contact-form{
+    height: 80vh;
+}
+.inputs {
+    width: 100%;
+    justify-content: left;
+}
+.submit{
+ 
+}
+
+.succes{
+    color: greenyellow;
+    font-size: 1.2rem;
+}
+.fotter_dialog{
+    width: 20%;
+    padding: 15px;
+    text-align: center;
+}
+.sub_button{
+    color: rgba(  59, 30, 84, 0.5);
 
 }

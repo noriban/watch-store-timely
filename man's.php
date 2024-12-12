@@ -11,7 +11,7 @@ require_once("config.php");
 $menwatchquery = "SELECT * FROM watches, watch_details WHERE target_audience = 'Men' && watch_details.watch_id = watches.id";
 $menwatchresult = $con->query($menwatchquery);
 while($rowwatchresult = $menwatchresult->fetch_row()){
-// var_dump($rowwatchresult[0]);
+
 echo('
 <div class="shop-dialog ">
    <form method="get" action="productsite.php" class="">

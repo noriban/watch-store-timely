@@ -73,13 +73,12 @@
 ?>
             </div>
             </div>
-        </div>
-    </div>
 
-    </div>
+
+
     <?php 
     require 'footer.php';
     ?>
        
     <script src="java.js"></script>
-    <script src="login.js"></script>
+  

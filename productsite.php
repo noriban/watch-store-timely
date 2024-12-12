@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["product"])){
         <div class="product-name">
             <p><?php echo($result_product[6]);?> </p>
         </div>
-        <button class="dialog-product-button navbar-link" type="submit">Add to cart  <i class="fa fa-bag-shopping"></i></button>
+        <button class="submit-button navbar-link" type="submit">Add to cart  <i class="fa fa-bag-shopping"></i></button>
       
     </div>
 
@@ -59,4 +59,3 @@ if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["product"])){
             </div>
 </div>
 <?php require_once("footer.php") ?>
-<script src="login.js"></script>

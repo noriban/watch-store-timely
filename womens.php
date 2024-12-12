@@ -38,3 +38,4 @@ echo('
 <?php
 require_once("footer.php")
 ?>
+<script src="login.js"></script>

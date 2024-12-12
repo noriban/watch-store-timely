@@ -40,7 +40,7 @@ $insertquery = $con->prepare("INSERT INTO users (username,password) VALUES (?,?)
 $insertquery->bind_param("ss", $username, $password_hash);
 $result = $insertquery->execute();
         if($result){
-    $error .= '<p class="succes">password not match</p>';
+    $error .= '<p class="succes">successful login</p>';
         } else {
             
     $error .= '<p class="error">something went wrong</p>';
