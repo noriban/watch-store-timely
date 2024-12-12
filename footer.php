@@ -46,3 +46,7 @@
 </body>
 <script src="login.js"></script>
 </html>
+
+    <?php
+    $con->close();
+    ?>
