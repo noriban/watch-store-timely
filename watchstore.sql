@@ -191,6 +191,13 @@ INSERT INTO `watch_details` (`id`, `watch_id`, `description`, `specification`, `
 (55, 55, 'Premium Stainless Steel chronograph from Fossil. Features a sophisticated design with precise timekeeping and elegant finish.', 'Water Resistance: 50m, Battery Life: 1 year, Case Size: 36mm, Material: Stainless Steel', 'Women'),
 (56, 56, 'Premium Titanium analog from Seiko. Features a sophisticated design with precise timekeeping and elegant finish.', 'Water Resistance: 30m, Battery Life: 5 years, Case Size: 32mm, Material: Titanium', 'Men');
 
+
+
+CREATE TABLE`shopbag`(
+`id` int(11) NOT NULL,
+    `userid` int(11) NOT NULL,
+    `watchid` int(11) NOT NULL
+)
 --
 -- Indeksy dla zrzutów tabel
 --

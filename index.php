@@ -54,7 +54,7 @@
             
                 echo('
                 <div class="shop-dialog ">
-                   <form method="get" action="productsite.php" class="">
+                   <form method="POST" action="productsite.php" class="">
                    <button class="product-button d-flex f-direction-col justify-content-center" type="submit" name="product" value="'.$row[0].'">
                   
                    <div class="product-img d-flex justify-content-center">

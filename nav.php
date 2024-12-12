@@ -25,7 +25,7 @@
         </div>
         <div class="navbar-store d-flex col-sm-3">
         <div class="navbar-search-store col-sm-3  d-flex">
-        <a class="navbar-link" href="#">
+        <a class="navbar-link" href="commingsoon.php">
         <i class="fa fa-search "></i>
         </a>    
         </div>
@@ -66,7 +66,7 @@ function logout(){
                 <a class="navbar-link"  href="man's.php">Men's</a> 
      </li>
              <li class="navbar-item">
-                <a class="navbar-link"  href="#">Sale</a> 
+                <a class="navbar-link"  href="commingsoon.php">Sale</a> 
             </li>
             <li class="navbar-item">
                 <a class="navbar-link"  href="contact.php">Contact</a> 

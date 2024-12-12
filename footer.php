@@ -12,8 +12,8 @@
       
 
         ?>
-<div class="fotter">
-    <div class="w-80 d-flex">
+<div class="fotter d-flex justify-content-center">
+    <div class="fotte w-80 d-flex">
         <div class="fotter_dialog navbar-logo">
         <img src="./img/image2vector.svg" alt="" srcset="">
         </div>
@@ -29,7 +29,7 @@
             <a class="navbar-link " href="./womens.php"><i class="fa-brands fa-github"></i></a>
             <a class="navbar-link " href="./contact.php"><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <div class="fotter_dialog">
+        <div class="fotter_">
         <form action="index.php" class="f-direction-col d-flex" method="POST">
             <p class="fotter-text">Newsletter Subscription</p>
             <div class="d-flex">

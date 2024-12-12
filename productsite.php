@@ -1,17 +1,47 @@
 <?php 
 require_once("session.php");
 require_once("config.php");
-if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["product"])){
-    $product_id = $_GET["product"];
-    if($query_product = $con->query("SELECT * FROM watch_details,watches WHERE watch_id = $product_id && watches.id= $product_id;")){
-        $result_product = $query_product->fetch_row();
-       
+$errorproduct = '';
+// $product_id='';
+if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["product"])){
+    $product_id = $_POST["product"];
+   
     }
+
+    
+if(isset($_POST["add_cart"])){
+    $product_id = $_POST["add_cart"];
+
+    if($_SERVER["REQUEST_METHOD"] =="POST" && isset($_SESSION["login"]))
+    {
+        $product_id = $_POST["add_cart"];
+        if($insertproduct = $con->prepare("INSERT INTO shopbag (userid,watchid) VALUES (? , ?)")){
+            $insertproduct->bind_param("ii", $_SESSION["userid"], $product_id);
+            $insertproduct->execute();
+            $errorproduct = '<p class="succes">sucesfull product add to cart</p>';
+    //  var_dump($_POST["add_cart"]);  
+    //  var_dump($product_id);
+    //  var_dump($productid);
+
+}else{
+    $errorproduct = '<p class="error">something gone wrong</p>'; 
+}}else{
+    $errorproduct = '<p class="error">to add a product to your cart you need to log in</p>'; 
 }
+}
+
+
+if(!empty($product_id)){
+
+if($query_product = $con->query("SELECT * FROM watch_details,watches WHERE watch_id = $product_id && watches.id = $product_id;")){
+    $result_product = $query_product->fetch_row();
+}}
 
 ?>
 
     <?php 
+  
+
     require_once('head.php');
     require_once("nav.php");
     require_once("login.php");
@@ -28,11 +58,18 @@ if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["product"])){
         <div class="product-name">
             <p class="price-text"><?php echo($result_product[6]);?> </p>
         </div>
-        <button class="submit-button navbar-link" type="submit">Add to cart  <i class="fa fa-bag-shopping"></i></button>
-      
+        <form action="" method="post">
+        <?php echo('
+        <button class="submit-button navbar-link" name="add_cart" value=" ' . $result_product[1] .  ' " type="submit">Add to cart  <i class="fa fa-bag-shopping"></i></button>
+       '); 
+       echo($errorproduct);
+       ?>
+       
+        </form>
     </div>
 
     </div>
+
     <div class="dialog-spec w-80">
     <div class="product-description">
                 <h1 class="product-text-topic">Description:</h1>
