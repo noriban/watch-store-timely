@@ -9,7 +9,7 @@
    <div class="navbar d-flex  w-80 ">
 
         <div class="navbar-search col-sm-3 d-flex">
-        <a class="navbar-link" href="#">
+        <a class="navbar-link" href="commingsoon.php">
         <i class="fa fa-search "></i>
         </a>    
         </div>
