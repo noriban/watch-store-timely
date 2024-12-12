@@ -29,9 +29,9 @@
         <i class="fa fa-search "></i>
         </a>    
         </div>
-            <button class="navbar-link " id="bag_shopping">
+            <a href="shopbag.php" class="navbar-link ">
             <i class="fa fa-bag-shopping "></i>
-            </button>
+            </a>
     
             <?php 
 // 

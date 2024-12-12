@@ -1,6 +1,7 @@
-<?php require('session.php');?>
+
 
     <?php
+    require('session.php');
       require_once 'head.php';
      require  'nav.php';
         require 'login.php';

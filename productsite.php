@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["product"])){
             <h1><?php echo($result_product[7]);?> zł</h1>
         </div>
         <div class="product-name">
-            <p><?php echo($result_product[6]);?> </p>
+            <p class="price-text"><?php echo($result_product[6]);?> </p>
         </div>
         <button class="submit-button navbar-link" type="submit">Add to cart  <i class="fa fa-bag-shopping"></i></button>
       

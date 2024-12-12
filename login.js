@@ -8,13 +8,15 @@ let loginText = document.getElementById("login-text")
 let loginbutton = document.getElementById("login_btn")
 let form = document.getElementById("form")
 let sumbit_button = document.getElementsByClassName("form-submit")
+let shopping_bag = document.getElementById("bag_shopping")
+
 
 
 let linkBar = document.getElementById("bars")
 let navbarLinks = document.getElementById("navbar-list")
 
 linkBar.addEventListener('click' , changestyle)
-
+// shopping_bag.addEventListener('click' , changeshopbag)
 loginOpenButton.addEventListener('click' , changeloginpage)
 loginCloseButton.addEventListener("click" , changeloginpage)
 resgisterButton.addEventListener("click" , changeregister)
@@ -68,3 +70,7 @@ function changestyle(){
    
 
 }
+
+// function changeshopbag(){
+//    if(shopping_bag.classList[])
+// }

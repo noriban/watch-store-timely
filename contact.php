@@ -31,6 +31,16 @@ if(!isset($_SESSION["login"])){
 }
 
 else{
+    if(isset($subject) || isset($body)) {
+
+        if(mail($to_email, $subject, $body, $headers)) {
+            echo '<p class="succes">Mail send we will contact you to your email that you dont give anywhere pepega</p>';
+    }
+    else {
+        echo '<p class="error">something gone wrong</p>';
+      
+    }
+    }
 echo('
 <div class="contact-form  d-flex justify-content-center ">
     <div class="w-60">
@@ -49,16 +59,7 @@ echo('
 </form>
 </div>
 ' );
-if(isset($subject) || isset($body)) {
 
-    if(mail($to_email, $subject, $body, $headers)) {
-        echo '<p class="succes">Mail send we will contact you to your email that you dont give anywhere pepega</p>';
-}
-else {
-    echo '<p class="error">something gone wrong</p>';
-  
-}
-}
 }
 ?>
 </div>
